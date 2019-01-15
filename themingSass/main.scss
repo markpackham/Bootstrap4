@@ -1,0 +1,39 @@
+/*
+Override Boostrap Defaults
+*/
+/*
+To override Bootstrap defaults make the changes before
+you do your imports
+*/
+$theme-colors:(
+"primary":#521751,
+"danger":#921751
+);
+
+$border-radius: 10rem;
+
+/*
+Only import the Bootstrap aspects you need to make
+things simpler & less bloated
+This is if you really want EVERYTHING
+@import "node_modules/bootstrap/scss/boostrap";
+*/
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/forms";
+
+/*
+Custom code
+*/
+.main-form{
+ width: 450px;
+ margin: auto;
+}
