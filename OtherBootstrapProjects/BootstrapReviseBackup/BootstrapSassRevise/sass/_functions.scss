@@ -1,0 +1,8 @@
+//Return black or white text color as a contrast to the background
+@function set-text-color($color) {
+  @if (lightness($color) >50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
